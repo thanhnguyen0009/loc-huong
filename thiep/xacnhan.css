@@ -1,0 +1,864 @@
+@font-face {
+  font-family: 'SVN-Gotham';
+  src: url('../thiep/fonts/SVN-GothamBlack.woff2') format('woff2'),
+      url('../thiep/fonts/SVN-GothamBlack.woff') format('woff'),
+      url('../thiep/fonts/SVN-GothamBlack.svg#SVN-GothamBlack') format('svg');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SVN-Gotham';
+  src: url('../thiep/fonts/SVN-Gotham.woff2') format('woff2'),
+      url('../thiep/fonts/SVN-Gotham.woff') format('woff'),
+      url('../thiep/fonts/SVN-Gotham.svg#SVN-Gotham') format('svg');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SVN-Gotham Book';
+  src: url('../thiep/fonts/SVN-GothamBook.woff2') format('woff2'),
+      url('../thiep/fonts/SVN-GothamBook.woff') format('woff'),
+      url('../thiep/fonts/SVN-GothamBook.svg#SVN-GothamBook') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SVN-Gotham';
+  src: url('../thiep/fonts/SVN-GothamLight.woff2') format('woff2'),
+      url('../thiep/fonts/SVN-GothamLight.woff') format('woff'),
+      url('../thiep/fonts/SVN-GothamLight.svg#SVN-GothamLight') format('svg');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SVN-Gotham';
+  src: url('../thiep/fonts/SVN-GothamThin.woff2') format('woff2'),
+      url('../thiep/fonts/SVN-GothamThin.woff') format('woff'),
+      url('../thiep/fonts/SVN-GothamThin.svg#SVN-GothamThin') format('svg');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SVN-Gotham Ultra';
+  src: url('../thiep/fonts/SVN-GothamUltra.woff2') format('woff2'),
+      url('../thiep/fonts/SVN-GothamUltra.woff') format('woff'),
+      url('../thiep/fonts/SVN-GothamUltra.svg#SVN-GothamUltra') format('svg');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SVN-Gotham';
+  src: url('../thiep/fonts/SVN-GothamBlackItalic.woff2') format('woff2'),
+      url('../thiep/fonts/SVN-GothamBlackItalic.woff') format('woff'),
+      url('../thiep/fonts/SVN-GothamBlackItalic.svg#SVN-GothamBlackItalic') format('svg');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SVN-Gotham';
+  src: url('../thiep/fonts/SVN-GothamBoldItalic.woff2') format('woff2'),
+      url('../thiep/fonts/SVN-GothamBoldItalic.woff') format('woff'),
+      url('../thiep/fonts/SVN-GothamBoldItalic.svg#SVN-GothamBoldItalic') format('svg');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SVN-Gotham';
+  src: url('../thiep/fonts/SVN-GothamBold.woff2') format('woff2'),
+      url('../thiep/fonts/SVN-GothamBold.woff') format('woff'),
+      url('../thiep/fonts/SVN-GothamBold.svg#SVN-GothamBold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SVN-Gotham';
+  src: url('../thiep/fonts/SVN-GothamLight.woff2') format('woff2'),
+      url('../thiep/fonts/SVN-GothamLight.woff') format('woff'),
+      url('../thiep/fonts/SVN-GothamLight.svg#SVN-GothamLight') format('svg');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SVN-Gotham';
+  src: url('../thiep/fonts/SVN-GothamBold.woff2') format('woff2'),
+      url('../thiep/fonts/SVN-GothamBold.woff') format('woff'),
+      url('../thiep/fonts/SVN-GothamBold.svg#SVN-GothamBold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SVN-Gotham';
+  src: url('../thiep/fonts/SVN-GothamItalic.woff2') format('woff2'),
+      url('../thiep/fonts/SVN-GothamItalic.woff') format('woff'),
+      url('../thiep/fonts/SVN-GothamItalic.svg#SVN-GothamItalic') format('svg');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SVN-Gotham';
+  src: url('../thiep/fonts/SVN-GothamLightItalic.woff2') format('woff2'),
+      url('../thiep/fonts/SVN-GothamLightItalic.woff') format('woff'),
+      url('../thiep/fonts/SVN-GothamLightItalic.svg#SVN-GothamLightItalic') format('svg');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SVN-Gotham Book';
+  src: url('../thiep/fonts/SVN-GothamBookItalic.woff2') format('woff2'),
+      url('../thiep/fonts/SVN-GothamBookItalic.woff') format('woff'),
+      url('../thiep/fonts/SVN-GothamBookItalic.svg#SVN-GothamBookItalic') format('svg');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SVN-Gotham Ultra';
+  src: url('../thiep/fonts/SVN-GothamUltraItalic.woff2') format('woff2'),
+      url('../thiep/fonts/SVN-GothamUltraItalic.woff') format('woff'),
+      url('../thiep/fonts/SVN-GothamUltraItalic.svg#SVN-GothamUltraItalic') format('svg');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SVN-Gotham';
+  src: url('../thiep/fonts/SVN-GothamThinItalic.woff2') format('woff2'),
+      url('../thiep/fonts/SVN-GothamThinItalic.woff') format('woff'),
+      url('../thiep/fonts/SVN-GothamThinItalic.svg#SVN-GothamThinItalic') format('svg');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SVN-Gotham';
+  src: url('../thiep/fonts/SVN-GothamLightItalic.woff2') format('woff2'),
+      url('../thiep/fonts/SVN-GothamLightItalic.woff') format('woff'),
+      url('../thiep/fonts/SVN-GothamLightItalic.svg#SVN-GothamLightItalic') format('svg');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SVN-Gotham XLight';
+  src: url('../thiep/fonts/SVN-GothamXLight.woff2') format('woff2'),
+      url('../thiep/fonts/SVN-GothamXLight.woff') format('woff'),
+      url('../thiep/fonts/SVN-GothamXLight.svg#SVN-GothamXLight') format('svg');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SVN-Gotham XLight';
+  src: url('../thiep/fonts/SVN-GothamXLightItalic.woff2') format('woff2'),
+      url('../thiep/fonts/SVN-GothamXLightItalic.woff') format('woff'),
+      url('../thiep/fonts/SVN-GothamXLightItalic.svg#SVN-GothamXLightItalic') format('svg');
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '1FTV VIP Retro Signature';
+  src: url('../thiep/fonts/1FTVVIPRetroSignature.woff2') format('woff2'),
+      url('../thiep/fonts/1FTVVIPRetroSignature.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MTD Doppelganger Display';
+  src: url('../thiep/fonts/MTDDoppelgangerDisplay.woff2') format('woff2'),
+      url('../thiep/fonts/MTDDoppelgangerDisplay.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root{
+  --primary-color: rgb(121, 45, 38);
+  --secondary-color: #F8F3ED;
+  --font-gotham: 'SVN-Gotham';
+}
+
+
+
+[data-aos] {
+  will-change: opacity, transform;
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  width: 480px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.container-wrapper{
+  /* height: 1000px; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* background-image: url('./anh/back-02.webp');
+  background-position: bottom center;
+  background-size: cover;
+  background-repeat: no-repeat; */
+}
+
+.box-save {
+  width: 100%;
+  height: 800px;
+  background-image: url('./anh/pic2-02.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin: 0 auto;
+  position: relative; /* Thêm thuộc tính này để tạo bối cảnh cho vị trí tuyệt đối */
+}
+
+.box-save::before {
+  content: '';
+  position: absolute; /* Đặt vị trí tuyệt đối */
+  top: 0; /* Bắt đầu từ trên cùng */
+  left: 0;
+  right: 0;
+  bottom: 0; /* Phủ toàn bộ diện tích của container */
+  background: linear-gradient(to top, rgb(121, 45, 38),  rgba(0, 0, 0, 0)); /* Gradient từ đen mờ dần đến trong suốt */
+  pointer-events: none; /* Để các sự kiện chuột không bị chặn */
+  z-index: 1; /* Đặt z-index thấp hơn để lớp phủ nằm dưới nội dung */
+}
+
+.img-box1 {
+  width: 60%;
+  position: relative; /* Hoặc tuyệt đối nếu cần thiết */
+  z-index: 2; /* Đặt z-index cao hơn để nội dung nổi bật hơn */
+  padding-bottom: 30px;
+}
+
+.box-content{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: rgb(121, 45, 38);
+  color: #fff;
+}
+
+.lb2{
+  font-family: var(--font-gotham);
+  font-weight: 300;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+hr{
+  border: 0;
+  border-top: 2px solid #fff;
+  width: 100px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+
+.lb3{
+  font-family: var(--font-gotham);
+  font-weight: 400;
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+
+.lb4{
+  font-family: var(--font-gotham);
+  font-weight: 300;
+  font-size: 10px;
+  margin-bottom: 5px;
+  padding: 10px;
+}
+.time-date{
+  font-family: var(--font-gotham);
+  font-size: 22px;
+}
+
+.box-icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 60px 0 50px;
+}
+
+.icon{
+  width: 10%;
+}
+
+.lb5{
+  font-family: var(--font-gotham);
+  font-weight: 300;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+.lb6{
+  font-family: var(--font-gotham);
+  font-weight: 400;
+  font-size: 13px;
+  margin-bottom: 10px;
+  margin-top: -10px;
+}
+
+.church{
+  font-family: 'MTD Doppelganger Display';
+  font-size: 55px;
+  margin-bottom: 40px;
+}
+
+
+.box-center{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--secondary-color);
+  height: auto;
+}
+
+.name{
+  width: 50%;
+  margin: 50px 0;
+}
+
+.img-center{
+  width: 90%;
+  margin-bottom: 50px;
+}
+
+.time-center{
+  font-family: var(--font-gotham);
+  color: var(--primary-color);
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.date{
+  font-family: var(--font-gotham);
+  font-weight: 300;
+  font-size: 13px;
+  margin: 5px 0 30px;
+}
+
+.label-add{
+  font-family: var(--font-gotham);
+  font-weight: 300;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.add{
+  font-family: var(--font-gotham);
+  font-weight: 600;
+  font-size: 40px;
+  color: var(--primary-color);
+  margin-top: -20px;
+}
+
+.map{
+  font-family: var(--font-gotham);
+  width: 200px;
+  height: 30px;
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  border: none;
+  padding: 20px;
+  margin: 30px 0 70px;
+}
+
+.link-map{
+  text-decoration: none;
+  color: #fff;
+}
+
+
+.box-timeline{
+  height: auto;
+  background-image: url('./anh/back-timeline-02.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.lb-timeline{
+  font-family: 'MTD Doppelganger Display';
+  color: #EDD643;
+  font-size: 45px;
+  margin: 30px 0 20px;
+}
+
+.img-timeline{
+  width: 70%;
+  margin-bottom: 40px;
+}
+
+.img-timeline2{
+  width: 70%;
+  margin-bottom: 80px;
+}
+
+.img-timeline3{
+  width: 50%;
+  margin-bottom: 100px;
+}
+
+.box-album{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  line-height: 17px;
+  background-color: var(--secondary-color);
+}
+
+.box-grid{
+  display: grid;
+  grid-template-columns: 1fr 2.5fr 1fr;  /* Cột giữa rộng gấp đôi 2 cột bên */
+  gap: 30px;  /* Khoảng cách giữa các cột */
+  padding: 0 10px;  /* Khoảng cách ở 2 bên */
+  margin-top: 50px;
+  font-family: var(--font-gotham);
+  font-weight: 300;
+  font-size: 9px;
+  text-align: center;
+  color: #111;
+}
+
+
+.content{
+  font-family: var(--font-gotham);
+  font-weight: 300;
+  font-size: 12px;
+  margin: 150px 0 70px;
+}
+
+
+.lb-dress{
+  font-family: 'MTD Doppelganger Display';
+  color: var(--primary-color);
+  font-size: 50px;
+  margin-top: 200px;
+}
+
+.cnt-album{
+  font-family: 'SVN-Gotham';
+  font-weight: 300;
+  font-size: 10px;
+  margin-top: 12px;
+}
+
+
+
+.box-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* padding: 20px; */
+  margin-bottom: 20px;
+  background-image: url('./anh/back-form-02.png');
+}
+
+.box-grid2{
+  display: grid;
+  grid-template-columns: 1fr 2.5fr 1fr;  /* Cột giữa rộng gấp đôi 2 cột bên */
+  gap: 30px;  /* Khoảng cách giữa các cột */
+  padding: 0 10px;  /* Khoảng cách ở 2 bên */
+  margin-top: 50px;
+  font-family: var(--font-gotham);
+  font-weight: 300;
+  font-size: 9px;
+  text-align: center;
+  color: #fff;
+}
+
+.forrm{
+  background-image: url('./anh/pic-form1-02.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 1050px;
+}
+
+.hr1{
+  border: 0;
+  border-top: 2px solid #111;
+  width: 300px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  margin-top: -10px;
+}
+
+.feed-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 50px 0 20px 0;
+  line-height: 20px;
+}
+
+
+.in-fe{
+  font-size: 11px;
+  font-weight: 300;
+  font-family: 'SVN-Gotham';
+  padding: 10px;
+  margin-top: 550px;
+}
+
+.til{
+  display: flex;
+  text-align: center;
+  font-family: 'SVN-gotham';
+  font-size: 10px;
+}
+
+[type="radio"] {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: auto;
+  margin: 0;
+  /* overflow: hidden; */
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  /* white-space: nowrap; */
+  }
+  
+
+  .til{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-family: 'SVN-gotham';
+    font-size: 12px;
+    margin-top: 20px;
+  }
+
+.container-check {
+  margin: 5px 0 20px 0;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  /* margin: 0 auto; */
+  font-family: 'SVN-Gotham';
+  font-weight: 300;
+  }
+  .container-check1 {
+    margin-top: 5px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* margin: 0 auto; */
+    font-family: 'SVN-Gotham';
+    font-weight: 300;
+    }
+    
+
+.box-feed:checked+label {
+  color: #fff;
+  background-color: #FBE1D7;
+  }
+  
+.box-feed{
+border-radius: 20px;
+width: 100px;
+flex: 1;
+}
+  
+.box-check{
+display: inline-block;
+align-items: center;
+justify-content: center;
+font-family: 'SVN-Gotham';
+border-radius: 20px;
+/*margin: 0 15px;*/
+}
+
+.box-feed:checked+label {
+color: #fff;
+background-color: #FBE1D7;
+}
+
+
+
+.til-check{
+/* margin: 0 auto; */
+font-style: normal;
+font-size: 13px;
+font-weight: 400;
+}
+
+
+.check-box {
+width: 90px;
+text-align: center;
+display: inline-block;
+border: 2px solid #111;
+padding: 5px 10px;
+margin: 5px 20px;
+border-radius: 20px;
+font-style: normal;
+/* background-color: #fff; */
+}
+.check-box2 {
+  width: 150px;
+  text-align: center;
+  display: inline-block;
+  border: 2px solid #111;
+  padding: 5px 10px;
+  margin: 5px 20px;
+  border-radius: 20px;
+  font-style: normal;
+  /* background-color: #fff; */
+  }
+  .check-box1 {
+    width: 350px;
+    text-align: center;
+    display: inline-block;
+    border: 2px solid #111;
+    padding: 5px 10px;
+    margin: 5px 20px;
+    border-radius: 20px;
+    font-style: normal;
+    /* background-color: #fff; */
+    }
+    .check-box3 {
+      width: 65px;
+      text-align: center;
+      display: inline-block;
+      border: 2px solid #111;
+      padding: 5px 10px;
+      margin: 5px 20px;
+      border-radius: 20px;
+      font-style: normal;
+      /* background-color: #fff; */
+      }
+
+.box-feed:checked+label {
+color: #111;
+border: 2px solid #FBE1D7;
+background-color: #FBE1D7;
+}
+
+.box-ten{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  font-family: 'SVN-Gontham';
+  }
+  
+  .inp-ten{
+  width: 350px;
+  height: 30px;
+  text-align: left;
+  border-radius: 20px;
+  border: 2px solid #111;
+  font-size: 12px;
+  font-weight: 300;
+  padding: 5px 10px;
+  margin: 5px 0;
+  font-family: 'SVN-Gotham';
+  background: none;
+  }
+textarea{
+    width: 350px;
+    height: 100px;
+    text-align: left;
+    border-radius: 20px;
+    border: 2px solid #111;
+    font-size: 13px;
+    font-weight: 300;
+    padding: 5px 10px;
+    margin: 5px 0;
+    font-family: 'SVN-Gotham';
+    background: none;
+    }
+
+.wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 40px;
+}
+.xacnhan{
+  height: 30px;
+  font-size: 15px;
+  background: #FBE1D7;
+  color: #111;
+  margin: 20px 10px;
+  border-radius: 20px;
+  border: 1px solid #FBE1D7;
+  cursor: pointer;
+  width: 150px;
+  z-index: 2;
+}
+  
+  .xacnhan:hover{
+  background: #111;
+  color: #fff;
+}
+
+.img-end{
+  width: 100%;
+}
+
+.box-end{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  margin: 50px 0 60px 0;
+  line-height: 15px;
+  color: #fff;
+  font-weight: 300;
+}
+
+.lb-end1{
+  font-family: var(--font-gotham);
+  font-size: 10px;
+}
+.lb-end2{
+  font-family: var(--font-gotham);
+  font-size: 9px;
+}
+
+
+/* SLIDER */
+.slider {
+  width: 100%;
+  max-width: 800px;
+  height: 550px;
+  position: relative;
+  overflow: hidden; /* <===  */
+  border-radius: 15px;
+  margin-top: 50px;
+}
+
+.slide {
+  width: 100%;
+  max-width: 800px;
+  height: 350px;
+  position: absolute;
+  transition: all 0.5s;
+}
+
+.slide img {
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
+}
+
+.btn {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  border: none;
+  border-radius: 50%;
+  z-index: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  font-size: 18px;
+}
+.btn:active {
+  transform: scale(1.1);
+}
+.btn-prev {
+  top: 45%;
+  left: 2%;
+}
+
+.btn-next {
+  top: 45%;
+  right: 2%;
+}
+
+
+/* ================================ */
+
+@media (max-width: 480px){
+  .container {
+      width: 100%;
+  }
+  .info{
+    font-size: 10px;
+  }
+  .lichtrinh{
+    margin-left: 55px;
+  }
+  .img-map{
+    width: 90%;
+    margin-left: -20px;
+  }
+  .forrm{
+    width: 95%;
+  }
+  .box-feed{
+    width: 50px;
+  }
+  .feed-info{
+    margin: 45px 0 20px 0;
+  }
+}
