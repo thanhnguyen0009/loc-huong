@@ -80,28 +80,43 @@
               <!-- Slider container -->
               <div class="slider">
                 <div class="slide">
-                <img src="./thiep/anh/IMG_9077.webp" alt="" />
+                <img src="./thiep/anh/PIG00001.webp" alt="" />
                 </div>
                 <div class="slide">
-                    <img src="./thiep/anh/IMG_9394.webp" alt="" />
+                    <img src="./thiep/anh/PIG07871.webp" alt="" />
                 </div>
                 <div class="slide">
-                    <img src="./thiep/anh/IMG_9431.webp" alt="" />
+                    <img src="./thiep/anh/PIG08293.webp" alt="" />
                 </div>
                 <div class="slide">
-                    <img src="./thiep/anh/IMG_9444.webp" alt="" />
+                    <img src="./thiep/anh/PIG08698.webp" alt="" />
                 </div>
                 <div class="slide">
-                    <img src="./thiep/anh/IMG_9483.webp" alt="" />
+                    <img src="./thiep/anh/PIG08911.webp" alt="" />
                 </div>
                 <div class="slide">
-                    <img src="./thiep/anh/IMG_9631.webp" alt="" />
+                    <img src="./thiep/anh/PIG09081.webp" alt="" />
                 </div>
                 <div class="slide">
-                    <img src="./thiep/anh/IMG_9676.webp" alt="" />
+                    <img src="./thiep/anh/PIG09485.webp" alt="" />
                 </div>
                 <div class="slide">
-                    <img src="./thiep/anh/IMG_9724.webp" alt="" />
+                    <img src="./thiep/anh/REX0328BAN.webp" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="./thiep/anh/REX0405.webp" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="./thiep/anh/REX0740.webp" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="./thiep/anh/REX0876.webp" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="./thiep/anh/REX1349.webp" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="./thiep/anh/REX1355.webp" alt="" />
                 </div>
                 
                 <button class="btn btn-next"><i class="fa-solid fa-caret-right"></i></button>
@@ -129,7 +144,7 @@
                     </div>
                 <!-- <img src="./thiep/anh/pic11-12.webp" alt="" class="img-form"> -->
                  <div class="forrm">
-                    <form action="" name="#">
+                    <form action="" name="loc-huong">
                         <div class="feed-info">
                             <label for="" class="in-fe">HÃY GIÀNH CHÚT THỜI GIAN XÁC NHẬN THAM DỰ GIÚP<br>
                                 PHƯỚC LỘC VÀ MINH HƯƠNG NHÉ!</label>
@@ -139,15 +154,15 @@
                             <label for="" class="title">BẠN LÀ BẠN BÈ, ĐỒNG NGHIỆP HAY NGƯỜI THÂN CỦA...?</label>
                         </div> -->
                         <div class="container-check">
-                            <input class="box-feed" type="radio" value="CÓ" id="yes" name="BẠN BÈ">
+                            <input class="box-feed" type="radio" value="CÓ" id="yes" name="XÁC NHẬN">
                             <label class="check-box" for="yes">
                                 <h3 class="til-check">CÓ</h3>
                             </label>
-                            <input class="box-feed" type="radio" value="KHÔNG" id="no" name="BẠN BÈ">
+                            <input class="box-feed" type="radio" value="KHÔNG" id="no" name="XÁC NHẬN">
                             <label class="check-box" for="no"> 
                                 <h3 class="til-check">KHÔNG</h3>
                             </label>
-                            <input class="box-feed" type="radio" value="CÓ THỂ" id="maybe" name="BẠN BÈ">
+                            <input class="box-feed" type="radio" value="CÓ THỂ" id="maybe" name="XÁC NHẬN">
                             <label class="check-box" for="maybe"> 
                                 <h3 class="til-check">CÓ THỂ</h3>
                             </label>
@@ -177,13 +192,15 @@
         </div>
     </div>
     <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbyGZM9Kmfmrw3l6RWZ2NQ6AiUGrkPLRkpFaHb2eIFkm6dOn842gfbFxn_U3mYF6XGiz/exec';
-        const form = document.forms['lam-oanh'];
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbz1TEWXmnA4rUe2ItQgv8WoG2A000iYMpc42fC6Krbi1KS0CXwoM6rLbpfdRypr2EU/exec';
+        const form = document.forms['loc-huong'];
     
         form.addEventListener('submit', e => {
-        e.preventDefault();
-        alert('CẢM ƠN BẠN ĐÃ PHẢN HỒI! Dữ liệu gửi về sẽ mất khoảng một vài giây, nhấn "OK" và đợi trang tự tải lại nhé <3'); // Hiển thị thông báo ngay lập tức khi nhấn submit
-        
+        e.preventDefault(); // Ngừng việc gửi form mặc định
+
+        // Hiển thị thông báo cảm ơn ngay khi nhấn gửi
+        alert('CẢM ƠN BẠN ĐÃ PHẢN HỒI! Dữ liệu gửi về sẽ mất khoảng một vài giây, nhấn "OK" và đợi form tự làm mới lại nhé <3');
+
         // Gửi dữ liệu form đi
         fetch(scriptURL, { 
             method: 'POST', 
@@ -191,10 +208,9 @@
         })
         .then(response => {
             if (response.ok) {
-                // Nếu dữ liệu được gửi thành công, tải lại trang
-                setTimeout(() => {
-                    window.location.reload(); // Tải lại trang sau 0.5 giây
-                }, 100); // 0.5 giây
+                // Nếu dữ liệu gửi thành công, làm mới lại form
+                form.reset(); // Làm mới lại form
+                alert('Thông tin đã được gửi về dâu/rể!!');
             } else {
                 // Nếu gặp lỗi khi gửi dữ liệu
                 console.error('Error!', response);
@@ -207,7 +223,6 @@
             alert('OPPS! Đã xảy ra lỗi: ' + error.message);
         });
     });
-    
     </script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
